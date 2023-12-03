@@ -1,19 +1,45 @@
 {
+  "Professores": [
+    {
+      "id": 1,
+      "nome": "David Wilker" }
+    ,
+    { 
+      "id": 2,
+      "nome": "Marcelo Jose" 
+    },
+    { 
+      "id": 3,
+      "nome": "Gustavo Junior" 
+    }
+  ],
   "alunos": [
     {
       "id": 1,
       "nome": "Marcos",
-      "sobrenome": "Xavier"
+      "sobrenome": "Xavier",
+      "professor": {
+        "id": 1,
+        "nome": "David Wilker" 
+      }
     },
     {
       "id": 2,
       "nome": "Pedro",
-      "sobrenome": "Wilker"
+      "sobrenome": "Wilker",
+      "professor": {
+        "id": 2,
+        "nome": "Marcelo Jose" 
+      }
     },
     {
       "id": 3,
       "nome": "Luisa",
-      "sobrenome": "Neves"
+      "sobrenome": "Neves",
+      "professor": {
+        "id": 2,
+        "nome": "Marcelo Jose" 
+      }
     }
   ]
 }

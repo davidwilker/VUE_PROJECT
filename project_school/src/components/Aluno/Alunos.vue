@@ -1,13 +1,12 @@
 <template>
   <div>
-   <titulo texto="Aluno"/>
-   <div>
-     <input type="text" placeholder="Nome do Aluno"
-      v-model="nome" v-on:keyup.enter="addAluno()">
+    <titulo texto="Aluno" />
+    <div>
+      <input type="text" placeholder="Nome do Aluno" v-model="nome" v-on:keyup.enter="addAluno()">
       <button class="btn btn_input" @click="addAluno()">Add</button>
-   </div>
+    </div>
 
-   <table>
+    <table>
       <thead>
         <th>Mat</th>
         <th>Nome</th>
@@ -15,8 +14,8 @@
       </thead>
       <tbody v-if="alunos.length">
         <tr v-for="(aluno, index) in alunos" :key="index">
-          <td>{{aluno.id}}</td>
-          <td>{{aluno.nome}} {{ aluno.sobrenome }}</td>
+          <td>{{ aluno.id }}</td>
+          <td>{{ aluno.nome }} {{ aluno.sobrenome }}</td>
           <td>
             <button class="btn btn_danger" @click="remover(aluno)">Remover</button>
           </td>
@@ -42,16 +41,16 @@ export default {
       titulo: 'Alunos',
       nome: "",
       alunos: []
-    };    
+    };
   },
   created() {
     this.$http
       .get('http://localhost:3000/alunos')
       .then(res => res.json())
       .then(alunos => this.alunos = alunos)
-  }, 
+  },
   props: {
-    
+
   },
   methods: {
     addAluno() {
@@ -66,7 +65,7 @@ export default {
         .then(alunoRetornoado => {
           this.alunos.push(alunoRetornoado);
           this.nome = '';
-        })      
+        })
     },
     remover(aluno) {
       this.$http
@@ -82,15 +81,17 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-
-input{  
+input {
+  width: calc(100% - 195px);
   border: 0;
   padding: 20px;
   font-size: 1.3em;
   color: #687f7f;
   display: inline;
 }
-.btn_input{
+
+.btn_input {
+  width: 150px;
   widows: 150px;
   border: 0px;
   padding: 20px;
@@ -98,11 +99,10 @@ input{
   display: inline;
   background-color: rgb(116, 115, 115);
 }
-.btn_input:hover{
+
+.btn_input:hover {
   padding: 20px;
   margin: 0px;
   border: 0px;
 }
-
-
 </style>
