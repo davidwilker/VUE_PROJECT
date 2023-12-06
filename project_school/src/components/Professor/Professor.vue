@@ -9,11 +9,11 @@
             </thead>
             <tbody v-if="Professores.length">
                 <tr v-for="(professor, index) in Professores" :key="index">
-                    <td>{{ professor.id }}</td>
-                    <router-link to="/Alunos" tag="td" style=" cursor: pointer">
+                    <td class="colPequeno" style="text-align: center; width: 15%">{{ professor.id }}</td>
+                    <router-link v-bind:to="'/Alunos/' + professor.id" tag="td" style=" cursor: pointer">
                         {{ professor.nome }} {{ professor.sobrenome }}
                     </router-link>
-                    <td>
+                    <td class="colPequeno" style="text-align: center; width: 20%">
                         {{ professor.qdtAlunos }}
                     </td>
                 </tr>

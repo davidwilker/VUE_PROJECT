@@ -2,15 +2,15 @@
   "Professores": [
     {
       "id": 1,
-      "nome": "David Wilker" }
-    ,
-    { 
-      "id": 2,
-      "nome": "Marcelo Jose" 
+      "nome": "David Wilker"
     },
-    { 
+    {
+      "id": 2,
+      "nome": "Marcelo Jose"
+    },
+    {
       "id": 3,
-      "nome": "Gustavo Junior" 
+      "nome": "Gustavo Junior"
     }
   ],
   "alunos": [
@@ -18,18 +18,10 @@
       "id": 1,
       "nome": "Marcos",
       "sobrenome": "Xavier",
+      "dataNascimento": "01/02/1994",
       "professor": {
-        "id": 1,
-        "nome": "David Wilker" 
-      }
-    },
-    {
-      "id": 2,
-      "nome": "Pedro",
-      "sobrenome": "Wilker",
-      "professor": {
-        "id": 2,
-        "nome": "Marcelo Jose" 
+        "id": 3,
+        "nome": "Gustavo Junior"
       }
     },
     {
@@ -38,7 +30,36 @@
       "sobrenome": "Neves",
       "professor": {
         "id": 2,
-        "nome": "Marcelo Jose" 
+        "nome": "Marcelo Jose"
+      }
+    },
+    {
+      "nome": "Joao Silva",
+      "sobrenome": "",
+      "professor": {
+        "id": 1,
+        "nome": "David Wilker"
+      },
+      "id": 4
+    },
+    {
+      "id": 5,
+      "nome": "José",
+      "sobrenome": "Carlos",
+      "dataNascimento": "25/10/1194",
+      "professor": {
+        "id": 1,
+        "nome": "David Wilker"
+      }
+    },
+    {
+      "id": 6,
+      "nome": "Julho",
+      "sobrenome": "Souza",
+      "dataNascimento": "25/01/2024",
+      "professor": {
+        "id": 2,
+        "nome": "Marcelo Jose"
       }
     }
   ]

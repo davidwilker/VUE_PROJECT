@@ -2,7 +2,7 @@
   <div id="app">
     <Nav></Nav>
     <div class="margimPrincial">
-      <router-view>
+      <router-view :key="$route.fullPath">
 
       </router-view>
     </div>
@@ -52,6 +52,7 @@ html {
 }
 
 .btn_danger {
+  font-size: 0.8em !important;
   background-color: #fa4430;
 }
 
@@ -60,6 +61,7 @@ html {
   padding: 10px 20px;
   cursor: pointer;
   border: 1px solid black;
+  font-size: 1.2em;
   color: white;
   font-weight: bold;
   border-radius: 5px;
@@ -96,5 +98,8 @@ table thead th {
 
 .colPequeno {
   width: 5%;
+  text-align: right;
+  background-color: rgb(125, 217, 245);
+  font-weight: bold;
 }
 </style>

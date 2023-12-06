@@ -2,7 +2,7 @@
     <div class="barraTopo">
         <nav class="margimPrincial">
             <router-link to="/professores">Professores</router-link>
-            <router-link to="/Alunos">Alunos</router-link>
+            <router-link to="/Alunosall">Alunos</router-link>
             <router-link to="/Sobre">Sobre</router-link>
         </nav>
 
